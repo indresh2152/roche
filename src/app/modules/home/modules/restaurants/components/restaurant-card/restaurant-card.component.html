@@ -1,0 +1,13 @@
+<div class="restaurant-card" (click)="onGoToRestaurant()">
+    <div class="restaurant-image">
+        <img [src]="data?.image?.url" />
+    </div>
+    <div class="restaurant-data">
+        <p class="name">
+            <span class="res-name">{{data?.name}}</span>
+            <span class="res-rating">{{data?.rating?.aggregate_rating}}</span>
+        </p>
+        <p class="cuisines">{{data?.cuisines.join(', ')}}</p>
+        <p class="address">{{data?.locality?.name}}</p>
+    </div>
+</div>

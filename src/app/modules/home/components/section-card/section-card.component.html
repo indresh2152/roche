@@ -1,0 +1,9 @@
+<div class="section-card" (click)="onGoToSection(data)" [ngClass]="{'disable': data?.blur}">
+    <div class="section-image">
+        <img [src]="data?.img" alt="section image" *ngIf="data?.img">
+    </div>
+    <div class="section-data">
+        <p class="title">{{data?.title}}</p>
+        <p class="sub-title">{{data?.subtitle}}</p>
+    </div>
+</div>

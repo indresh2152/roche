@@ -1,0 +1,12 @@
+<div class="resturants">
+      <div class="title">
+            <p>Restaurants list</p>
+      </div>
+     <div class="restaurants-list">
+            <restaurant-card 
+                  *ngFor="let restaurant of resturantsList" 
+                  [data]="restaurant" 
+                  (goToRestaurant)="goToRestaurant($event)">
+            </restaurant-card>
+      </div>
+</div>

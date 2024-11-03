@@ -1,0 +1,32 @@
+.login {
+    height: calc(100vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login-form {
+        padding: 16px;
+        width: 400px;
+        height: 300px;
+        border: 1px solid #727272;
+        border-radius: 8px;
+        .login-title {
+            font-size: 22px;
+        }
+        .form-fields {
+            height: 240px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .primary-btn {
+                min-height: 40px;
+                min-width: 100px;
+                padding: 10px;
+                background-color: #1774e5;
+                color: white;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

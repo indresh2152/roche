@@ -20,10 +20,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('roche');
   });
 
-  it('should render title', () => {
+  it(`should have text 'roche app is running!'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('roche app is running!');
+    const app = fixture.componentInstance;
+    expect(app.text).toEqual('roche app is running!');
   });
 });

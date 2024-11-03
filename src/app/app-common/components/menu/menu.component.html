@@ -1,0 +1,18 @@
+<div class="menu">
+    <nav class="navigation">
+        <div class="start">
+            <ul class="nav-list">
+                <li class="nav-item" *ngFor="let item of startItems">
+                    <a (click)="goToPage(item)">{{ item.displayText }}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="end">
+            <ul class="nav-list">
+                <li class="nav-item" *ngFor="let item of endItems">
+                    <a (click)="goToPage(item)">{{ item.displayText }}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

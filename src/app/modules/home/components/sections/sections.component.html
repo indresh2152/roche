@@ -1,0 +1,10 @@
+<div class="sections">
+    <ng-container *ngIf="sections && sections.length > 0">
+        <section-card 
+            *ngFor="let cardData of sections"
+            (goToSection)="goToSection($event)"
+            [data]="cardData">
+        </section-card>
+    </ng-container>
+    <cors-error *ngIf="isError"></cors-error>
+</div>
